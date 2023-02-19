@@ -1,0 +1,142 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 16px;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color:#b79649;
+}
+.container{
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 6rem;
+}
+header .headerContent {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 6rem;
+}
+header .headerImg {
+    margin-bottom: 1rem;
+}
+header .headerImg img {
+    width: 100%;
+    height: calc(100vh - 100px);
+    object-fit:cover;
+}
+header .nameDate {
+    max-width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
+header .nameDate h1 {
+    color:#525645;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    font-weight: 400;
+}
+header .nameDate span{
+    color:#525645;
+    font-size: 1.2rem;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+main{
+    text-align: center;
+}
+main h2 {
+    color:#525645;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    font-weight: 400;
+}
+main p{
+    color:#525645;
+    font-size: 1.5rem;
+    line-height: 1.6;
+    letter-spacing: 0.1;
+    font-weight: 400;
+}
+section.battles{
+    text-align: center;
+}
+section.battles h2 {
+    color:#525645;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    font-weight: 400;
+}
+section.battles ul {
+    display: grid;
+    grid-template-columns:1fr;
+    grid-gap: 1rem;
+}
+section.battles ul li {
+    list-style: none;
+}
+section.battles ul li a {
+    text-decoration: none;
+    color:#525645;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    cursor:pointer;
+}
+section.battles ul li a:hover{
+    color:#3a3d30 ;
+    transition: all 0.3s ease-in-out;
+}
+footer {
+    text-align: center;
+}
+footer p{
+    color:#525645;
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+footer a {
+    color:#525645;
+    text-decoration: none;
+}
+footer a:hover{
+    color:#3a3d30 ;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Media Queries */
+@media screen and (min-width : 620px) {
+    header .headerContent {
+        flex-direction: row;
+        align-items: center;
+    }
+    header .headerImg {
+        width: 60%;
+       margin-bottom: 0rem;
+  }
+    header .headerImg img {
+        height: 100vh;
+    }
+    header .nameDate {
+        width:40%;
+        text-align: start;
+        padding:0 1.5rem;
+    }
+}
+@media screen and (min-width : 768px)
+{
+    main{
+        text-align: justify;
+    }
+    section.battles ul {
+        grid-template-columns:repeat(2,1fr);
+    }
+}
+@media screen and (min-width : 1024px){
+    section.battles ul {
+        grid-template-columns:repeat(3,1fr);
+    }
+
+}
